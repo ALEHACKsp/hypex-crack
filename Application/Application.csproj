@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0F6BC616-A1CA-43A3-BBA5-08DA4838D3DA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Application</RootNamespace>
+    <AssemblyName>Application</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Application.ico</ApplicationIcon>
+    <StartupObject>Class23</StartupObject>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AlUeMDFSPCzskPtJWvpqfcQiSNEU" />
+    <Reference Include="BetterFolderBrowser" />
+    <Reference Include="Bunifu_UI_v1.5.3" />
+    <Reference Include="LowLevelInput" />
+    <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="ThemeColorPicker" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-Module-.cs" />
+    <Compile Include="Authentication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentication.Designer.cs">
+      <DependentUpon>Authentication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class10.cs" />
+    <Compile Include="Class16.cs" />
+    <Compile Include="Class17.cs" />
+    <Compile Include="Class18.cs" />
+    <Compile Include="Class19.cs" />
+    <Compile Include="Class20.cs" />
+    <Compile Include="Class22.cs" />
+    <Compile Include="Class23.cs" />
+    <Compile Include="Class24.cs" />
+    <Compile Include="Class29.cs" />
+    <Compile Include="Class30.cs" />
+    <Compile Include="Class34.cs" />
+    <Compile Include="Class35.cs" />
+    <Compile Include="Class36.cs" />
+    <Compile Include="Class6.cs" />
+    <Compile Include="Class7.cs" />
+    <Compile Include="Class8.cs" />
+    <Compile Include="Class9.cs" />
+    <Compile Include="Debug_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Debug_1.Designer.cs">
+      <DependentUpon>Debug_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dummy_ptr\{43494965-4659-49d7-afd0-08c4639d0a8f}.cs" />
+    <Compile Include="GClass0.cs" />
+    <Compile Include="GClass1.cs" />
+    <Compile Include="GClass10.cs" />
+    <Compile Include="GClass11.cs" />
+    <Compile Include="GClass12.cs" />
+    <Compile Include="GClass13.cs" />
+    <Compile Include="GClass17.cs" />
+    <Compile Include="GClass18.cs" />
+    <Compile Include="GClass19.cs" />
+    <Compile Include="GClass2.cs" />
+    <Compile Include="GClass20.cs" />
+    <Compile Include="GClass21.cs" />
+    <Compile Include="GClass3.cs" />
+    <Compile Include="GClass4.cs" />
+    <Compile Include="GClass5.cs" />
+    <Compile Include="GClass6.cs" />
+    <Compile Include="GClass7.cs" />
+    <Compile Include="GClass8.cs" />
+    <Compile Include="GClass9.cs" />
+    <Compile Include="Generator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Generator.Designer.cs">
+      <DependentUpon>Generator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GEnum0.cs" />
+    <Compile Include="GEnum1.cs" />
+    <Compile Include="GEnum2.cs" />
+    <Compile Include="GEnum3.cs" />
+    <Compile Include="GEnum4.cs" />
+    <Compile Include="GEnum6.cs" />
+    <Compile Include="GEnum7.cs" />
+    <Compile Include="GForm0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GForm0.Designer.cs">
+      <DependentUpon>GForm0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GStruct0.cs" />
+    <Compile Include="GStruct1.cs" />
+    <Compile Include="GStruct10.cs" />
+    <Compile Include="GStruct11.cs" />
+    <Compile Include="GStruct12.cs" />
+    <Compile Include="GStruct13.cs" />
+    <Compile Include="GStruct14.cs" />
+    <Compile Include="GStruct15.cs" />
+    <Compile Include="GStruct16.cs" />
+    <Compile Include="GStruct4.cs" />
+    <Compile Include="GStruct5.cs" />
+    <Compile Include="GStruct6.cs" />
+    <Compile Include="GStruct7.cs" />
+    <Compile Include="GStruct8.cs" />
+    <Compile Include="GStruct9.cs" />
+    <Compile Include="hotkeys.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Loader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loader.Designer.cs">
+      <DependentUpon>Loader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerPixelAlphaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PerPixelAlphaForm.Designer.cs">
+      <DependentUpon>PerPixelAlphaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RS6Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RS6Menu.Designer.cs">
+      <DependentUpon>RS6Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sett6.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="settings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tcp_moe_client\Classes\anti_anal.cs" />
+    <Compile Include="tcp_moe_client\Classes\Config.cs" />
+    <Compile Include="tcp_moe_client\Classes\CProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tcp_moe_client\Classes\Debug.cs" />
+    <Compile Include="tcp_moe_client\Classes\Enums.cs" />
+    <Compile Include="tcp_moe_client\Classes\Events.cs" />
+    <Compile Include="tcp_moe_client\Classes\FileSizeFormatter.cs" />
+    <Compile Include="tcp_moe_client\Classes\Handlers.cs" />
+    <Compile Include="tcp_moe_client\Classes\Injector.cs" />
+    <Compile Include="tcp_moe_client\Classes\Local.cs" />
+    <Compile Include="tcp_moe_client\Classes\NoFocusTrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tcp_moe_client\Classes\Product.cs" />
+    <Compile Include="tcp_moe_client\Classes\scrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tcp_moe_client\Classes\Senders.cs" />
+    <Compile Include="tcp_moe_client\Classes\Session.cs" />
+    <Compile Include="tcp_moe_client\Classes\UI.cs" />
+    <Compile Include="tcp_moe_client\Classes\Worker.cs" />
+    <Compile Include="tcp_moe_client\Properties\Settings.cs" />
+    <Compile Include="tcp_moe_client\Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+    <None Include="packages.config" />
+    <None Include="tcp_moe_client\Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MetroFramework.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
